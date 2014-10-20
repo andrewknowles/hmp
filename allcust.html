@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HM Plant Conversion</title>
+    <h1>HM Plant Conversion</h1>
+    <hr />
+</head>
+<body>
+    <h2>All Customers</h2><br />
+    <form action="allcustomer.php" method="post">
+        <table border="1" style="width:1200px">
+            <tr>
+                <td>Reset reg_csc table </br> (Enter the word 'confirm' to validate request)</td>
+                <td><input type="text" name="confirm" value="" /></td>
+                <td><input type="submit" name="reset" /></td>
+                
+            </tr>
+            <tr>
+ <!--               <td>Load reg_csc table - Source text file name</td>
+                 <td><input type="text" name="filetext" size="80" value="c:\wamp\www\HCMUK\datain\" /></td>
+                <td> <input type="submit" name="loadtext" /></td>-->
+            </tr>
+            <tr>
+                <td>Load reg_csc table - Source Excel file name + Sheet Name</td>
+                <td>
+                   <input type="text" name="fileexcel" size="80" value="c:\wamp\www\HCMUK\datain\AR Name and address Workings 30.09.2014.xlsx" />
+ <!--                     <input type="text" name="fileexcel" size="80" value="c:\wamp\www\HCMUK\datain\All AR Names and address.xlsx" />--> 
+                     <input type="text" name="sheetexcel" size="15" value="AR_Names_2">
+ <!-- 							<input type="text" name="sheetexcel" size="15" value="Sheet1">-->
+                </td>
+                <td> <input type="submit" name="loadexcel" /></td>
+            </tr>
+            <tr>
+ <!--                <td>Check reg_csc table</td>
+                <td><input type="submit" name="check" /></td>-->
+            </tr>
+        </table>
+    </form>
+<h1>REMEMBER</h1>
+Rename tab AR Names to AR_Names</BR>
+Rename Plant Sales Merges To to Plant_Sales_Merges_To</BR>
+Rename Transfer Account Number to Transfer_Account_Number</BR>
+
+</body>
+</html>
